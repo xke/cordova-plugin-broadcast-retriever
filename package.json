@@ -1,0 +1,11 @@
+{
+  "name": "cordova-plugin-broadcast-retriever",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "cordova-plugin-broadcast-retriever",
+    "platforms": [
+      "android"
+    ]
+  },
+  "description": "Cordova Plugin for Retrieving Data via a Broadcast"
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-broadcast-retriever"
+    version="1.0.0">
+    <name>Cordova Plugin to Retrieve Broadcast Data</name>
+    <license>MIT</license>
+
+    <js-module src="www/broadcast-retriever.js" name="cordova-plugin-broadcast-retriever">
+      <clobbers target="CordovaPluginBroadcastRetriever" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="CordovaPluginBroadcastRetriever">
+          <param name="android-package" value="CordovaPluginBroadcastRetriever" />
+          <param name="onload" value="true" />
+        </feature>
+      </config-file>
+
+      <source-file src="src/android/CordovaPluginBroadcastRetriever.java" target-dir="src/" />
+
+    </platform>
+
+    <!-- ios not available -->
+
+</plugin>
